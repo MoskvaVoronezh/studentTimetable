@@ -1,0 +1,23 @@
+<ion-header class="header visit-header">
+  <span class="back-button" (click)="back()">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+  </span>
+  <div class="visit-header__title">Математика</div>
+</ion-header>
+
+<ion-content class="content">
+  <div class="visit-wrapper">
+    <div class="visit__title">
+      Группа ИТ-41
+    </div>
+    <form [formGroup]="form" (ngSubmit)="submit()">
+       <ion-label formArrayName="orders" *ngFor="let order of form.controls.orders.controls; let i = index">
+         {{ordersData[i].firstName}} {{ordersData[i].lastName}}
+        <input type="checkbox" [formControlName]="i" />
+        
+      </ion-label>
+      <button>submit</button>
+    </form>
+     <!-- {{ordersData[i].name}} -->
+  </div>
+</ion-content>
