@@ -37,6 +37,10 @@ export class LoginPage implements OnInit {
       return;
     }
 
+    localStorage.setItem('currentUser', JSON.stringify(this.f.username.value, this.f.password.value));
+
+    this.router.navigateByUrl('/time-table')
+
   }
 
 }

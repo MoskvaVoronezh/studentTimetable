@@ -1,0 +1,39 @@
+.timetable {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 15px;
+   border-bottom: 0.55px solid #92949c;
+   .header__title {
+      margin: 0;
+      padding: 0;
+   }
+   &-wrapper {
+      height: 100%;
+      padding: 10px;
+      .info {
+         display: flex;
+         flex-direction: column;
+         &__name {
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 5px;
+         }
+         &__teacher {
+            font-size: 20px;
+            font-weight: 300;
+            margin-bottom: 5px;
+         }
+         &__type {
+            font-size: 16px;
+            margin-bottom: 5px;
+         }
+      }
+      .table-list {
+         &__item {
+            padding-bottom: 20px;
+         }
+      }
+   }
+}
+

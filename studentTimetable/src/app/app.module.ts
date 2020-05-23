@@ -10,9 +10,10 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginPage } from './pages/login/login.page';
+import { TimeTablePage } from './pages/time-table/time-table.page';
 
 @NgModule({
-  declarations: [AppComponent, LoginPage],
+  declarations: [AppComponent, LoginPage, TimeTablePage],
   entryComponents: [],
   imports: [BrowserModule, ReactiveFormsModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
