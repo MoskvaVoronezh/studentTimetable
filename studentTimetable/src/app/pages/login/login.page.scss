@@ -23,6 +23,13 @@
       &__input {
          --background: #fff;
          --color: #000;
+         --padding-start: 10px;
+      }
+
+      .invalid-feedback {
+         color: red;
+         margin-top: 10px;
+         margin-bottom: 10px;
       }
    }
 }
