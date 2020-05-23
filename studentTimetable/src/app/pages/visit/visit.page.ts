@@ -9,6 +9,8 @@ import { FormGroup, FormBuilder, Validators, FormArray, FormControl } from '@ang
 })
 export class VisitPage implements OnInit {
   form: FormGroup;
+  selectedOrderIds: any;
+  total: any;
 
   constructor(
     private location: Location,
@@ -28,10 +30,13 @@ export class VisitPage implements OnInit {
   }
 
   submit() {
-    const selectedOrderIds = this.form.value.orders
-      .map((v, i) => (v ? this.ordersData[i].id : null))
-      .filter(v => v !== null);
-    console.log(selectedOrderIds);
+    this.selectedOrderIds = this.form.value.orders.map((v, i) => (v ? this.ordersData[i].id : null)).filter(v => v !== null);
+    this.total = this.selectedOrderIds.length;
+
+    // selectedOrderIds.map(item => {
+    //   console.log(item);
+    //   this.total.push(item)
+    // }
   }
   
   ordersData = [{
