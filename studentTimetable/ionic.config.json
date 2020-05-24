@@ -1,5 +1,7 @@
 {
   "name": "studentTimetable",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

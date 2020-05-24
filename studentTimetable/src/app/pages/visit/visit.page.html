@@ -11,13 +11,15 @@
       Группа ИТ-41
     </div>
     <form [formGroup]="form" (ngSubmit)="submit()" class="students-list">
-      <ion-label class="students-list__item" formArrayName="orders"
+      <ion-label class="students-list__item" formArrayName="orders" (click)="goToWhy()"
         *ngFor="let order of form.controls.orders.controls; let i = index">
         {{i + 1 + '.'}} {{ordersData[i].firstName}} {{ordersData[i].lastName}}
         <ion-checkbox [formControlName]="i" ></ion-checkbox>
       </ion-label>
-      <div class="total-count">Общее число студентов на паре: {{total}}</div>
-      <ion-button type="submit">submit</ion-button>
+      <div class="total-all">
+        <div class="total-count">Общее число студентов на паре: {{total}}</div>
+        <ion-button type="submit">Посчитать</ion-button>
+      </div> 
     </form>
   </div>
 </ion-content>
