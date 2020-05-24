@@ -1,13 +1,13 @@
-<ion-header class="header timetable">
+<header class="header timetable">
     <span class="header__title">Расписание ИТ-41</span>
     <ion-button class="header__exit" (click)="exit()">Выход</ion-button>
-</ion-header>
+</header>
 
 <ion-content class="content">
   <div class="timetable-wrapper">
     <h3 class="date">Пн 23.05.2020</h3>
-    <ion-list class="table-list" *ngFor="let subject of subjects">
-      <ion-item class="table-list__item" (click)="goToVisit()">
+    <ion-list class="table-list">
+      <ion-item class="table-list__item" *ngFor="let subject of subjects" (click)="goToVisit()">
         <div class="info">
           <div class="info__name">{{ subject.name }}</div>
           <div class="info__teacher">{{ subject.teacher }}</div>

@@ -32,3 +32,20 @@ body {
    sans-serif;
    font-weight: normal;
 }
+
+.header {
+   background-color: #2A859F;
+   &__title {
+      font-size: 30px;
+      padding: 10px 0;
+   }
+}
+
+.toolbar {
+   --background: #2A859F;
+   --color: #fff;
+   font-weight: bold;
+}
+.content {
+   --background:#B9ECFA;
+}

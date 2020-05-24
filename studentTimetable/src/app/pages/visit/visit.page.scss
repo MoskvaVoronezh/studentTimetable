@@ -8,6 +8,8 @@
 
       &__title {
          font-weight: bold;
+         color: #fff;
+         font-size: 30px;
       }
 
       .back-button {
@@ -21,6 +23,8 @@
    }
    &__title {
       margin-bottom: 20px;
+      margin-top: 20px;
+      padding-left: 15px;
       font-weight: bold;
    }
    &-wrapper {
@@ -40,6 +44,9 @@
                border-bottom: 0.55px solid #92949c;
                padding-left: 15px;
                padding-right: 15px;
+               // .blue {
+               //    --backgroud: 
+               // }
             }
             &__label {
                display: flex;
@@ -59,10 +66,16 @@
       flex-direction: column;
       justify-content: center;
       padding: 15px 10px;
-      background-color: green;
       z-index: 2;
+      background-color: #2A859F;
    }
    &-count {
-      color: #fff
+      color: #fff;
+      margin-bottom: 5px;
+   }
+   &__btn {
+       --background: #FFC53D;
+       --color: #000;
+       font-weight: bold;
    }
 }

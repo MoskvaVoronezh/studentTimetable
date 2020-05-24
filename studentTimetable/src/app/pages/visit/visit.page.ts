@@ -12,7 +12,7 @@ export class VisitPage implements OnInit {
   form: FormGroup;
   selectedOrderIds: any;
   total: any;
-
+  
   constructor(
     private location: Location,
     private formBuilder: FormBuilder,

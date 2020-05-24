@@ -1,0 +1,24 @@
+<ion-header class="header cause visit-header">
+   <span class="back-button" (click)="back()">
+     <ion-icon name="arrow-back-outline"></ion-icon>
+   </span>
+   <div class="visit-header__title">Добавить уважительную причину</div>
+</ion-header>
+
+<ion-content class="content">
+  <div class="cause-wrapper">
+    <form class="cause-form">
+      <!-- <div class="cause-form__group">
+          С <ion-datetime displayFormat="MMMM" placeholder="Введите число"></ion-datetime> по
+          <ion-datetime displayFormat="MMMM" placeholder="Введите число"></ion-datetime>
+      </div> -->
+      <div class="cause-form__group">
+        <ion-label class="cause-form__label">Причина</ion-label>
+        <ion-textarea class="cause-form__textarea" rows="6" cols="10" placeholder="Введите текст"></ion-textarea>
+      </div>
+      <div class="cause-form__group">
+        <ion-button class="cause-form__btn">Сохранить</ion-button>
+      </div>
+    </form>
+  </div>
+</ion-content>
