@@ -1,9 +1,30 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>group</ion-title>
-  </ion-toolbar>
+<!-- <header class="header timetable">
+  <span class="header__title">Журнал {{groupName}}</span>
+</header> -->
+<ion-header class="header visit-header">
+  <span class="back-button" (click)="back()">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+  </span>
+  <div class="visit-header__title">Журнал {{groupName}}</div>
 </ion-header>
 
 <ion-content>
-
+  <ion-list class="student-list">
+    <ion-item class="student-list__item" *ngFor="let student of ordersData; let i = index">
+       <ion-label class="students-list__item">
+         <span> {{i + 1 + '.'}} {{ student.firstName }} {{student.lastName}}</span>
+         <div>
+           <ion-checkbox color="primary" [checked]="student.isVisit"></ion-checkbox>
+         </div>
+       </ion-label>
+    </ion-item>
+     <ion-item class="student-list__item">
+       <ion-label class="students-list__item">
+         <span class="bold">Согласовано</span>
+         <div>
+           <ion-checkbox color="primary" checked="true"></ion-checkbox>
+         </div>
+       </ion-label>
+     </ion-item>
+  </ion-list>
 </ion-content>

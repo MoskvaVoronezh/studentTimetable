@@ -13,9 +13,10 @@ import { LoginPage } from './pages/login/login.page';
 import { TimeTablePage } from './pages/time-table/time-table.page';
 import { VisitPage } from './pages/visit/visit.page';
 import { TeacherProfilePage } from './pages/teacher-profile/teacher-profile.page';
+import { GroupPage } from './pages/group/group.page';
 
 @NgModule({
-  declarations: [AppComponent, LoginPage, TimeTablePage, VisitPage, TeacherProfilePage],
+  declarations: [AppComponent, LoginPage, TimeTablePage, VisitPage, TeacherProfilePage, GroupPage],
   entryComponents: [],
   imports: [BrowserModule, ReactiveFormsModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
