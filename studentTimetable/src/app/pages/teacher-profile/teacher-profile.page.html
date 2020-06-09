@@ -1,0 +1,17 @@
+<header class="header timetable">
+  <span class="header__title">Профиль преподавателя</span>
+  <ion-button class="header__exit" (click)="exit()">Выход</ion-button>
+</header>
+
+<ion-content class="content">
+  <div class="teacher">
+    <h2 class="teacher__name">
+      {{ name }}
+    </h2>
+    <ion-list class="teacher-list">
+      <ion-item class="teacher-list__item" *ngFor="let group of groups" (click)="goToGroup(group.name)">
+        <div class="name">{{ group.name }}</div>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
