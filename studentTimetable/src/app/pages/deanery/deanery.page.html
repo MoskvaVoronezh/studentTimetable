@@ -1,0 +1,12 @@
+<header class="header timetable">
+  <span class="header__title">Деканат ЭМФ</span>
+  <ion-button class="header__exit" (click)="exit()">Выход</ion-button>
+</header>
+
+<ion-content>
+  <ion-list class="specialty-list">
+    <ion-item class="specialty-list__item" *ngFor="let specialty of specialtyes" (click)="goToCourse()">
+      {{specialty.name}}
+    </ion-item>
+  </ion-list>
+</ion-content>

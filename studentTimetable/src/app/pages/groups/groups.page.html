@@ -1,0 +1,14 @@
+<ion-header class="header visit-header">
+  <span class="back-button" (click)="back()">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+  </span>
+  <div class="visit-header__title">Группы</div>
+</ion-header>
+
+<ion-content>
+  <ion-list class="teacher-list">
+    <ion-item class="teacher-list__item" *ngFor="let group of groups" (click)="goToGroup(group.name)">
+      <div class="name">{{ group.name }}</div>
+    </ion-item>
+  </ion-list>
+</ion-content>

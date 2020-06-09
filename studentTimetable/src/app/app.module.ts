@@ -14,9 +14,12 @@ import { TimeTablePage } from './pages/time-table/time-table.page';
 import { VisitPage } from './pages/visit/visit.page';
 import { TeacherProfilePage } from './pages/teacher-profile/teacher-profile.page';
 import { GroupPage } from './pages/group/group.page';
+import { DeaneryPage } from './pages/deanery/deanery.page';
+import { CourcesPage } from './pages/cources/cources.page';
+import { GroupsPage } from './pages/groups/groups.page';
 
 @NgModule({
-  declarations: [AppComponent, LoginPage, TimeTablePage, VisitPage, TeacherProfilePage, GroupPage],
+  declarations: [AppComponent, LoginPage, TimeTablePage, VisitPage, TeacherProfilePage, GroupPage, DeaneryPage, CourcesPage, GroupsPage],
   entryComponents: [],
   imports: [BrowserModule, ReactiveFormsModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [

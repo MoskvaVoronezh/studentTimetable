@@ -42,8 +42,8 @@ export class LoginPage implements OnInit {
     if(this.f.username.value === 'teacher@ssuwt.ru') {
       console.log('teacher');
       this.router.navigateByUrl('/teacher-profile');
-    } else if(this.f.username.value === 'emf@ssuwt.ru') {
-      this.router.navigateByUrl('/dekatat');
+    } else if(this.f.username.value === 'emf') {
+      this.router.navigateByUrl('/deanery');
     } else {
       this.router.navigateByUrl('/time-table');
     }

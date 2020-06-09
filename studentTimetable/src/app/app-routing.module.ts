@@ -6,6 +6,9 @@ import { VisitPage } from './pages/visit/visit.page';
 import { CausePage } from './pages/cause/cause.page';
 import { TeacherProfilePage } from './pages/teacher-profile/teacher-profile.page';
 import { GroupPage } from './pages/group/group.page';
+import { DeaneryPage } from './pages/deanery/deanery.page';
+import { CourcesPage } from './pages/cources/cources.page';
+import { GroupsPage } from './pages/groups/groups.page';
 
 const routes: Routes = [
   { path: '', component: LoginPage },
@@ -15,8 +18,14 @@ const routes: Routes = [
   { path: 'cause', component: CausePage },
   { path: 'teacher-profile', component: TeacherProfilePage },
   { path: 'group', component: GroupPage },
+  { path: 'deanery', component: DeaneryPage },
+  { path: 'cources', component: CourcesPage },
+  { path: 'groups', component: GroupsPage },
   // otherwise redirect to home
   { path: '**', redirectTo: 'login' },
+  
+  
+  
   
 ];
 

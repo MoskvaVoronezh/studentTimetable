@@ -1,0 +1,22 @@
+.timetable {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 15px;
+   border-bottom: 0.55px solid #92949c;
+
+   .header__title {
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      font-weight: bold;
+      font-size: 30px;
+   }
+
+   .header__exit {
+      --background: #FFC53D;
+      --color: #000;
+      font-weight: bold;
+   }
+}
+

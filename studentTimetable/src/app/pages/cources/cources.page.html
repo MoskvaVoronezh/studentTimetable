@@ -1,0 +1,16 @@
+<ion-header class="header visit-header">
+  <span class="back-button" (click)="back()">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+  </span>
+  <div class="visit-header__title">Курсы</div>
+</ion-header>
+
+<ion-content>
+  <div class="cources-wrap">
+    <ion-list class="cources-list">
+      <ion-item class="cources-list__item" *ngFor="let cource of cources">
+        <ion-button class="header__exit" (click)="goToGroup()">{{cource.course}} курс</ion-button>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
