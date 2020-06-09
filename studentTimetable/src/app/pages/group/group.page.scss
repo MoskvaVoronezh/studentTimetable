@@ -70,33 +70,5 @@
 
    &-wrapper {
       height: 100%;
-
-      .students {
-         &-list {
-            display: flex;
-            flex-direction: column;
-
-            &__item {
-               width: 100%;
-               display: flex;
-               justify-content: space-between;
-               align-items: center;
-               margin-bottom: 20px;
-               padding-bottom: 10px;
-               border-bottom: 0.55px solid #92949c;
-               padding-left: 15px;
-               padding-right: 15px;
-               // .blue {
-               //    --backgroud: 
-               // }
-            }
-
-            &__label {
-               display: flex;
-               justify-content: space-between;
-               align-items: center;
-            }
-         }
-      }
    }
 }

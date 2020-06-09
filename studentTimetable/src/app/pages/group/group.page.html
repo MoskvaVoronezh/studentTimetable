@@ -1,6 +1,3 @@
-<!-- <header class="header timetable">
-  <span class="header__title">Журнал {{groupName}}</span>
-</header> -->
 <ion-header class="header visit-header">
   <span class="back-button" (click)="back()">
     <ion-icon name="arrow-back-outline"></ion-icon>
@@ -11,12 +8,13 @@
 <ion-content>
   <ion-list class="student-list">
     <ion-item class="student-list__item" *ngFor="let student of ordersData; let i = index">
-       <ion-label class="students-list__item">
+       <div class="students-list__item-1" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
          <span> {{i + 1 + '.'}} {{ student.firstName }} {{student.lastName}}</span>
-         <div>
-           <ion-checkbox color="primary" [checked]="student.isVisit"></ion-checkbox>
+         <div style="display: flex;">
+           <ion-checkbox color="danger" [checked]="student.isFirstVisit" style=" margin-right: 10px;"></ion-checkbox>
+           <ion-checkbox [checked]="student.isVisit"></ion-checkbox>
          </div>
-       </ion-label>
+       </div>
     </ion-item>
      <ion-item class="student-list__item">
        <ion-label class="students-list__item">

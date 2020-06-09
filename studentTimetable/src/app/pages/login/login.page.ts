@@ -38,10 +38,11 @@ export class LoginPage implements OnInit {
     }
 
     localStorage.setItem('currentUser', JSON.stringify(this.f.username.value, this.f.password.value));
-
+    //почта для препода
     if(this.f.username.value === 'teacher@ssuwt.ru') {
       console.log('teacher');
       this.router.navigateByUrl('/teacher-profile');
+      //почта для деканата
     } else if(this.f.username.value === 'emf') {
       this.router.navigateByUrl('/deanery');
     } else {
